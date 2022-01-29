@@ -11,5 +11,5 @@ if (userQuention == '+') {
 } else if (userQuention == '/') {
     alert('Результат:' + (+a / +b));
 }  else {
-    alert('Не правильний вибір');
+    alert('Невірно введені дані');
 }

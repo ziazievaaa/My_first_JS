@@ -2,14 +2,20 @@
 let a = prompt('введіть перше число',0);
 let b = prompt('введіть друге число', 0);
 let userQuention = prompt('Які дії з числами бажаєте здійснити? Оберіть з запропонованих: +, -, *, /');
-if (userQuention == '+') {
-    alert('Результат:' + (+a + +b));  
-} else if (userQuention == '-') {
-    alert('Результат:' + (+a - +b));  
-} else if (userQuention == '*') {
-    alert('Результат:' + (+a * +b));
-} else if (userQuention == '/') {
-    alert('Результат:' + (+a / +b));
-}  else {
-    alert('Не правильний вибір');
+switch(userQuention){
+    case ('+'):
+        alert('Результат:' + (+a + +b));
+        break;
+    case( '-'):
+        alert('Результат:' + (+a - +b)); 
+        break;
+    case ('*') :
+        alert('Результат:' + (+a * +b));
+        break;
+    case ('/') :
+        alert('Результат:' + (+a / +b));
+        break;
+    default:
+        alert('Невірно введені дані');
+        break;
 }

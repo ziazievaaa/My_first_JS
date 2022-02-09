@@ -1,0 +1,16 @@
+.calc {
+  background-color: #ffe4c4;
+  margin-top: 200px;
+  margin-left: 1200px;
+  padding: 20px;
+}
+
+ul {
+}
+
+.list_bottom {
+  width: 120px;
+  height: 75px;
+  border-radius: 10%;
+  margin: 10px;
+}

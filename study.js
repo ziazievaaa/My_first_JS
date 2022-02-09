@@ -211,32 +211,296 @@ if (last == 0) {
 
 // console.log(rez);
 
-let z = [123046];
-let s = String(z);
-let qwe = +s[0] + +s[1] + +s[2];
-let rty = +s[3] + +s[4] + +s[5];
-if (qwe == rty) {
-    console.log('yes');
+// let z = [123046];
+// let s = String(z);
+// let qwe = +s[0] + +s[1] + +s[2];
+// let rty = +s[3] + +s[4] + +s[5];
+// if (qwe == rty) {
+//     console.log('yes');
+// } else {
+//      console.log('no');
+// }
+
+// let year=+prompt('number 1-4');
+// switch (year) {
+//     case (1):
+//         alert('winter');
+//         break;
+//     case (2):
+//         alert('spring');
+//         break;
+//     case (3):
+//         alert('autoumn');
+//         break;
+//     case (4):
+//         alert('summer');
+//         break;
+//     default:
+//         alert('wrong');
+//     break;
+// }
+
+let ab = 2 ** 4;
+let ba = 4 ** 2;
+let re = ab != ba;
+console.log(re);
+
+
+// let vopros = confirm('are you 18 years old?');
+// vopros ? alert('vzroslui') : alert('maliyk');
+// let otvet = vopros == true ? alert('vzroslui') : alert('maliyk');
+
+// let i = 1; // задаем какую-нибудь переменную
+
+// while (i <= 5) {
+//     console.log(i); // выводим содержимое i в консоль
+//     i =i+ 2;// увеличиваем i на единицу при каждом проходе цикла
+// }
+
+// let i = 30;
+// while ( i >= 1) {
+//     console.log(i);
+//     i--;
+// }
+
+// for (j = 100; j >= 0; j--){
+//     console.log(j);
+// }
+
+let result = 0;
+for (let y = 1; y <= 99; y+=2){
+     result = result + y;
+}
+console.log(result);
+
+
+
+let arra = ['a', 'b', 'c', 'd', 'e'];
+for (let i = 0; i < arra.length; i++) {
+    console.log(arra[i]);
+}
+
+// let arka = [1, 2, 3, 4, 5, 6, 7, 8];
+// for (i = 0; i < arka.length; i++) {
+//     if (arka[i] % 2 != 0) {
+//         console.log(arka[i]);
+//     }
+// }
+
+let rsult = 0;
+let ark = [1, 2, 3];
+for (let i = 0; i < ark.length; i++) {
+    rsult += ark[i] ** 2; 
+} console.log(rsult);
+
+let tryu=[2, 5, 9, 15, 1, 4];
+for (let i = 0; i < tryu.length; i++) {
+    if (tryu[i] > 2 && tryu[i] < 11) {
+        console.log(tryu[i]);
+    }
+}
+
+
+
+let mass = [5, 7, 20, 3, -58, -1, -6, 8, -4, 2];
+let sym=0;
+for (let i = 0; i < mass.length; i++){
+    if (mass[i] > 0) {
+        sym += mass[i];
+    }
+} console.log(sym);
+
+
+
+
+let wer = [1, 2, 3, 4, 5];
+let razom=0;
+let serArifm;
+
+for (let i = 0; i < wer.length; i++){
+    razom += wer[i];
+    serArifm = razom / wer.length;    
+} console.log(serArifm);
+
+
+let arr10 = [10, 20, 30, 50, 235, 3000];
+let viznDes;
+
+for (let i = 0; i < arr10.length; i++) {
+    if ((arr10[i] / 10) < 10) {
+        viznDes = arr10[i] / 10;   
+    } else if ((arr10[i] / 10) < 99) {
+        viznDes = arr10[i] / 100;
+    } else if((arr10[i] / 10) > 100) {
+        viznDes = arr10[i] / 1000;
+    }if (Math.trunc(viznDes) == 1 || Math.trunc(viznDes) == 2 || Math.trunc(viznDes) == 5) {
+        console.log(arr10[i]);
+    }  
+}
+   
+let arr11 = [2, 3, 5, 6, 9, 7, 8];
+for (let i = arr11.length - 1; i >= 0;i--){
+    console.log(arr11[i]);
+}
+
+// Дан массив с числами. С помощью цикла выведите на экран все элементы,
+//  значение которых совпадает с их порядковым номером в массиве.
+let arr12 = ['a', 1, 5, 6, 4, 5, 8];
+
+for (let i = 0; i < arr12.length; i++) {
+    if (i == arr12[i]) {
+
+        console.log(i);
+    }
+}
+
+
+// let arr13 = [4, 5, 2, 3, 8, 6, 4];
+// for (i = 0; i < arr13.length-1; i++){
+//     document.write(arr13[i]+'</br>');
+// }
+
+let week = ['mon', 'tue', 'wen', 'thue', 'fri', 'thuter', 'sun'];
+
+for (i = 0; i < week.length ; i++) {
+    // if (week[i] >6) {
+    //     document.write(week[i]+'<\br>');
+    // }else  {
+    //     document.write(week[i] +'</b');
+    // }
+     
+    console.log(week[i]);
+    // else { document.write(week[i] + '</b>' + '</br>');
+        
+    
+}
+
+
+
+
+let arr17 = [1, 0, 2, 3, 0, 0, 4, 5, 0, 0, 12];
+let rezyltat = 0;
+for (let i = 0; i < arr17.length; i++){
+    if (arr17[i] == 0) {
+        rezyltat++;
+    }   
+}console.log(rezyltat);
+
+
+
+
+// let allCars = [];
+
+// for (let i = 0; i < 5; i++) {
+//     allCars[i] = {
+//     firmName: prompt('What firm name of your car?', ''),
+//     modelName: prompt('What model name of your car?', ''),
+//     engineDisplacement: prompt('What engine displacement  of your car?', 0),
+//     }
+//     console.log(allCars[i]);
+// } 
+
+// for (let i = 0; i < 5; i++) {
+//     if (allCars[i].engineDisplacement > 2.0) {  
+//         console.log(allCars[i]);
+//     } 
+// }
+
+
+  
+
+  
+
+
+
+let arr19 = [1, 0, 2, 3, 0, 4, 5, 0, 0];
+let num1 = 0;
+for (let elem of arr19) {
+    if (elem == 0) {
+        num1++;
+       
+    } 
+}console.log(num1);
+
+
+let arr20 = [2, 5, 9, 15, 1, 4];
+for (let i = 0; i < arr20.length; i++) {
+    if (arr20[i] > 3 && arr20[i] < 10) {
+        console.log(arr20[i]);
+    }
+} 
+
+
+let arr21 = [1, 2, 3, 4, 5];
+let rty = 0;
+for (let elem of arr21) {
+    rty += elem;
+   
+} console.log(rty);
+
+let obj1 = { a: 1, b: 2, c: 3, d: 4, e: 5 };
+let qwer = 0;
+for (let key in obj1) {
+    qwer += obj1[key];
+} console.log(qwer);
+
+
+let arr22 = [1, 2, 3, 4, 5, 6, 0, 4, 2, 8,];
+for (let elem of arr22) {
+    console.log(elem);
+    if (elem == 0) {
+        break;
+    }
+}
+
+let arr23 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let qaq = 0;
+let aza = 0;
+for (elem of arr23) {
+    qaq += elem;
+    aza ++;
+     
+    if (qaq > 20) {
+        break;
+    }
+} console.log(aza);
+
+// let qaz = [2, 51, 185, 11, 5, 6, -40, 50, 4,];
+// let rest = 0;
+
+// for (let i = 0; i < qaz.length; i++) {
+//     // 2. Перевірити чи є в циклі елемент 5, якщо є то повернути його індекс, якщо немає повернути null
+//      // 3. Перевірити чи є в циклі елемент 10, якщо є то повернути його індекс, якщо немає повернути null
+//     if (qaz[i] == 5) {
+//         console.log(i);
+//     }
+    
+//     if (qaz[i] == 10) {
+//         console.log(i);
+//     }
+     
+//     // 1. Знайти найбільший елемент в масиві
+//     if (qaz[i] > rest) {
+//         rest = qaz[i];
+//         console.log(rest);
+//     }
+// } 
+
+
+let arr24 = [2, 51, 185, 11, 15, 6, -40, 50, 4];
+let flag = false;
+let rea;
+for (let i = 0; i < arr24.length; i++) {
+    if (i === 5) {
+        flag = true;
+       
+    } rea= arr24[i];
+	}
+
+
+if (flag === true) {
+   
+	console.log(rea);
 } else {
-     console.log('no');
+	console.log(null);
 }
-
-let year=+prompt('number 1-4');
-switch (year) {
-    case (1):
-        alert('winter');
-        break;
-    case (2):
-        alert('spring');
-        break;
-    case (3):
-        alert('autoumn');
-        break;
-    case (4):
-        alert('summer');
-        break;
-    default:
-        alert('wrong');
-    break;
-}
-

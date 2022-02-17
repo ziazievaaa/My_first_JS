@@ -504,3 +504,266 @@ if (flag === true) {
 } else {
 	console.log(null);
 }
+
+
+function sbumma() {
+    let add = 0;
+    for (i = 1; i < 11; i++){
+        add += i;
+    } console.log(add);
+}
+
+sbumma(0, 3);
+
+// function cube(cub) {
+//     console.log(cub ** 3);
+// }
+
+cube(5);
+
+function proverka(numb) {
+    if (numb >= +0)
+        console.log('++++');
+    else{console.log('-----')}
+}
+
+proverka(0);
+
+function trio(n1, n2, n3) {
+    console.log(n1 + n2 + n3);
+}
+trio(2, 5, 10);
+
+function cube(cub) {
+    return(cub ** 3);
+}
+let asd = cube(3);
+console.log(asd)
+
+function kor(a) {
+    return (Math.sqrt(a));
+}
+let qwert = kor(3) + kor(4);
+console.log(qwert);
+
+function add(a, b) {
+    return  (a + b);
+}
+
+console.log(add(3, 9));
+
+
+function sqrt(num) {
+	return Math.sqrt(num);
+}
+
+function round(num) {
+	return num.toFixed(3);
+}
+console.log(round(sqrt(2)));
+
+// let vbn = round(sqrt(2));
+// console.log(vbn);
+
+function sum(num1, num2, num3) {
+	return num1 + num2 + num3;
+}
+
+console.log(round(sum(sqrt(2), sqrt(3), sqrt(4),)))
+
+
+
+
+
+
+
+const bigNum= n => {
+    let o = 0;
+    for (; n >= 10;) {
+        n /= 2;
+        o++;
+        if (n < 10) {
+            break;
+        }
+    } return (o);
+}
+    console.log(bigNum(200));
+
+
+const ucFirst= str=> {
+    console.log(str[0].toUpperCase()+str.slice(1));
+}
+ucFirst('vasia');
+
+// function checkSpam(str) {
+//     str = str.toLowerCase();
+//    return str.includes('viagra')|| str.includes('xxx');
+// }
+
+//  console.log(checkSpam('free xxxxx'));
+
+
+const truncate= (str, maxlength) =>{
+    return str.length > maxlength ? str.slice(0, maxlength - 3) + "..." : str;
+      
+}
+console.log(truncate("Its a very looooooooooooooooooooooooooooooong string", 20));
+
+
+// function extractCurrencyValue(str) {
+    
+//      return +str.slice(1);
+// }
+
+// console.log(extractCurrencyValue(' $23'));
+
+let str12 = 'abcde';
+let arr26 = str12.split('');
+let arr25 = arr26.reverse();
+let rewd=arr25.join('')
+console.log(rewd);
+
+
+let arr27 = [1, 0, undefined, 512, 7, false, null, "", 5, 89];
+let arr28 = arr27.filter(function (elem){
+    if (elem = +elem){
+    return true;
+	} else {
+		return false;
+	}
+});
+
+console.log(arr28);
+    
+
+// let arr29 = [1, 2, 3, 1, 2];
+// let arr30 = [];
+// for (i = 0; i < arr29; i++){
+//     if (arr29[i] === arr29[i]) {
+//         break;
+       
+//     } arr30 = arr29;
+   
+// }  console.log(arr30);
+// function unique(arr) {
+//   return Array.from(new Set(arr));
+// }
+// console.log(unique(arr29));
+
+// let arr31 = [1, 2, 3, 4, 6, 7];
+// let arr32 = [1, 2, 3, 4, 5, 7];
+// const isEqual = (arr31, arr32) => {
+//     let zxc= arr31.join('') === arr32.join('');
+//     return zxc;
+// }
+    
+// console.log(isEqual(arr31, arr32));
+
+
+let arr35 = [1, 2, 3, 4, 6, 7];
+let arr36 = [1, 2, 3, 4, 7, 7];
+let arr35result = 0;
+let arr36result = 0;
+
+const metter = (arr35, arr36) => {
+    for (i = 0, j = 0; i < arr35.length, j < arr36.length; i++, j++) {
+        arr35result += arr35[i];
+        arr36result += arr36[j];
+        if (arr35result === arr36result) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+console.log(metter(arr35, arr36));
+// console.log(arr36result);
+
+// let zxc;
+// for (; ;){
+//     if (zxc = arr31.join('') === arr32.join('')) {
+//         console.log(true);
+//         break;
+//     } else {
+//         console.log(false);
+//         break;
+//     }
+// }
+
+
+
+
+
+// let arr33 = [1, 2, 3, 1, 2];
+// let arr34;
+// for (let i = 0; i === arr33[i] + 1; i++){
+   
+// }
+// console.log(arr33)
+
+let arr37 = [1, 2, 3, 4, 5];
+let arr38 = [4, 5, 6];
+let arr40 = arr37.map(function (num, index) {
+    if (arr38[index] == undefined) {
+        return num;
+    } else {
+        return num + arr38[index];
+    }
+    
+} );
+console.log(arr40);
+
+
+let arr41 = [1, [2,[ 3, [4, 5]]]];
+ let resulto=[];
+function espand(arr) {
+   
+    for (let elem of arr) {
+        if (Array.isArray(elem) === true) {
+             espand(elem);
+        } else {
+            resulto.push(elem);
+        } 
+        
+} return resulto;
+    }
+console.log(espand(arr41));
+
+// let arr41 = [1[2[3[4]]]];
+// let arr42 = [];
+// function expand(arr) {
+
+// }
+//
+
+// function camelize(str) {2,4
+//     for (arr43.split(str)){
+       
+//    }
+
+// }
+let str1 = 'JS';
+console.log(str1.toLowerCase());
+
+let str2 = 'я учу javascript!';
+console.log(str2.slice(2, -1));
+console.log(str2.substring(2, str2.length - 1));
+
+let str3 = 'abcde';
+// if (str3[0] == 'b') {
+//     console.log('yes');
+// } else {
+//     console.log('no');
+console.log(str3.indexOf('a') === 0 ? 'yes': 'no');
+console.log(str3.indexOf('d'));
+console.log(str3.indexOf('a'));
+console.log(str3.indexOf('f'));
+
+let str4 = 'http://abcde';
+let str5 = str4.slice(0, 7);
+console.log(str5 === 'http://' ? 'yes' : 'no');
+console.log(str4.startsWith('http://'));
+
+
+
+
